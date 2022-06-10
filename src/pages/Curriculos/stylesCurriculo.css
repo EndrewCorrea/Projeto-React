@@ -1,0 +1,245 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  font-family: sans-serif;
+}
+.container {
+  background-color: #2e323b;
+  width: 100%;
+}
+.container-menu {
+  width: 100%;
+  min-height: 100vh;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-color: #2e323b;
+}
+.wrap-menu {
+  width: 100%;
+  background-color: #1b1c24;
+  overflow: hidden;
+  box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.2);
+  height: 110px;
+}
+.menu-form {
+  display: flex;
+  justify-content: space-between;
+}
+.menu-form-title {
+  font-family: sans-serif;
+  font-size: 20px;
+  color: azure;
+  line-height: 1.2;
+  padding-top: 40px;
+  padding-left: 270px;
+  position: absolute;
+}
+.menu-form-logo {
+  padding-top: 10px;
+  padding-left: 100px;
+}
+.menu-form-logo img {
+  width: 150px;
+}
+
+.menu-container-button {
+  margin-top: auto;
+  margin-right: 100px;
+  padding-bottom: 30px;
+  display: flex;
+}
+.menu-buttons {
+  font-size: 15px;
+  border: none;
+  color: #fff;
+  text-transform: uppercase;
+  background: none;
+  margin: 10px;
+  text-decoration: none;
+}
+.bg-empresa {
+  width: 170px;
+  display: flex;
+  border: none;
+  border-radius: 30px;
+  color: #fff;
+  line-height: 1.2;
+  text-transform: uppercase;
+  background: #fe9247;
+  background: -webkit-linear-gradient(to left, #fe9247, #eb1a1f);
+  background: -o-linear-gradient(to left, #fe9247, #eb1a1f);
+  background: -moz-linear-gradient(to left, #fe9247, #eb1a1f);
+  background: linear-gradient(to left, #fe9247, #eb1a1f);
+}
+.container-bg1 {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 100px;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+.container-bg2 {
+  width: 700px;
+  background-color: #1b1c24;
+  border-radius: 10px;
+  padding: 77px 55px 33px 55px;
+  box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.2);
+  margin-bottom: 100px;
+  color: #fff;
+  font-size: 14px;
+}
+.txt-curriculo {
+  width: 600px;
+  height: 350px;
+  background-color: #1b1c24;
+  border-radius: 10px;
+  padding: 77px 55px 33px 55px;
+  box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.2);
+  color: #fff;
+}
+.txt-curriculo2 {
+  padding-top: 50px;
+}
+.container-input1 {
+  width: 100%;
+  padding-top: 50px;
+}
+.container-input2 {
+  width: 100%;
+  padding-top: 50px;
+  display: flex;
+}
+.container-input3 {
+  width: 100%;
+  padding-top: 50px;
+  display: flex;
+}
+.container-input3 :first-child {
+  margin-right: 20px;
+}
+.container-input2 :first-child {
+  margin-right: 20px;
+}
+.container-input3 {
+  width: 100%;
+  padding-top: 50px;
+}
+
+.wrap-input {
+  width: 100%;
+  position: relative;
+  border-bottom: 2px solid #adadad;
+  margin-bottom: 37px;
+}
+
+.input {
+  font-size: 15px;
+  color: #fff;
+  line-height: 1.2;
+  border: none;
+  display: block;
+  width: 100%;
+  height: 45px;
+  background-color: transparent;
+  padding: 0 5px;
+  font-family: sans-serif;
+}
+
+.focus-input {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  color: #adadad;
+  font-family: sans-serif;
+}
+
+.focus-input::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+  background: #6a7dfe;
+  background: -webkit-linear-gradient(to left, #fe9247, #eb1a1f);
+  background: -o-linear-gradient(to left, #fe9247, #eb1a1f);
+  background: -moz-linear-gradient(to left, #fe9247, #eb1a1f);
+  background: linear-gradient(to left, #fe9247, #eb1a1f);
+}
+
+.focus-input::after {
+  font-family: Nunito, sans-serif;
+  font-size: 15px;
+  color: #999999;
+  line-height: 1.2;
+  content: attr(data-placeholder);
+  display: block;
+  width: 100%;
+  position: absolute;
+  top: 16px;
+  left: 0px;
+  padding-left: 5px;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.input:focus {
+  outline: 0;
+}
+
+.input:focus + .focus-input::after {
+  top: -15px;
+}
+
+.input:focus + .focus-input::before {
+  width: 100%;
+}
+
+.has-val + .focus-input::after {
+  top: -15px;
+}
+
+.has-val + .focus-input::before {
+  width: 100%;
+}
+.curriculo-btn {
+  cursor: pointer;
+  margin-top: 50px;
+  font-size: 15px;
+  border: none;
+  border-radius: 30px;
+  color: #fff;
+  text-transform: uppercase;
+  width: 120px;
+  height: 30px;
+  background: #fe9247;
+  background: -webkit-linear-gradient(to left, #fe9247, #eb1a1f);
+  background: -o-linear-gradient(to left, #fe9247, #eb1a1f);
+  background: -moz-linear-gradient(to left, #fe9247, #eb1a1f);
+  background: linear-gradient(to left, #fe9247, #eb1a1f);
+}
+.txt-file {
+  font-size: 15px;
+  color: #999999;
+  padding-bottom: 6px;
+}
+.container-file {
+  margin-top: 15px;
+}
